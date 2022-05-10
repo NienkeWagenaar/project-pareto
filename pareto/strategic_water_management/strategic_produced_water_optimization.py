@@ -4653,7 +4653,7 @@ def water_quality(model):
         model.s_F,
         model.s_W,
         default=0,
-        initialize=0,
+        initialize=10,  # this only applies to iron case study.
         doc="Water Quality of freshwater [mg/L]",
     )
     # Initial water quality at storage site
